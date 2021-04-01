@@ -5,11 +5,11 @@ import { monkeys } from './products/products.js'
 import { monkeyMaker } from './utils.js'
 const ul = document.getElementById('newMonkey');
 
-for(let booger of monkeys) {
-    const newLi = monkeyMaker(booger);
+for(let item of monkeys) {
+    const newLi = monkeyMaker(item);
 
     ul.append(newLi);
-}
+};
 
 
 
