@@ -19,7 +19,7 @@ export function monkeyMaker(monkeys) {
     pCategory.textContent = monkeys.category;
     
     const superPower = document.createElement('p');
-    superPower.classList.add('superpower');
+    superPower.classList.add('superPower');
     superPower.textContent = monkeys.superPower;
     
     const price = document.createElement('p');
