@@ -1,6 +1,70 @@
 body {
-    background-color: rgb(28 219 218);
+    display: grid;
+    grid-template-columns:80% 50% ;
+    background-image: url("../../assets/backround-image.png");
+    
     }
+.main-pic {
+    width: 100%;
+    max-height: 150vh;
+    max-width: 150vw;
+    border: none;
+    } 
 img {
-    size: 100%;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 50%;
+    border: 20px solid rgb(255 ,92, 192);
+    border-radius: 35px;
+    max-width: 30em;
     }
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    margin-left: -15vw;
+    max-width: 370px;
+    list-style: none;
+    background-color:black;
+    border-right: 20px solid  rgb(110 ,92, 192);
+    border-left: 20px solid rgb(110 ,92, 192);
+    
+    
+    }
+li {
+    display:block;
+    }
+.name {
+    font-size: 3em;
+    text-align: center ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(26, 188, 143);
+    
+    }
+.size {
+    font-size: 2em;
+    margin: 0px;
+    color: white;
+    text-align: center ;
+    text-align: center ;
+    }
+.category {
+    font-size: 2em;
+    margin: 0px;
+    color: white;
+    text-align: center ;
+    }
+.super {
+    font-size: 2em;
+    margin: 0px;
+    color: white;
+    }
+.price {
+    font-size: 3em;
+    margin: 0px;
+    font-weight: 900;
+    color: white;
+    text-align: center ;
+}
+

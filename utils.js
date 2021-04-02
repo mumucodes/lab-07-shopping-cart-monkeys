@@ -8,7 +8,7 @@ export function monkeyMaker(monkeys) {
     
     const img = document.createElement('img');
     img.classList.add('img');
-    img.src = monkeys.image;
+    img.src = '../../assets/'+ monkeys.image;
     
     const pSize = document.createElement('p');
     pSize.classList.add('size');
@@ -25,6 +25,9 @@ export function monkeyMaker(monkeys) {
     const price = document.createElement('p');
     price.classList.add('price');
     price.textContent = `$${monkeys.price}.00`;
+
+    const button = document.createElement('button');
+    button.classList.add()
 
     li.append(pName, img, pSize, pCategory, superPower, price);
     return li;

@@ -1,7 +1,7 @@
 export const monkeys = [
 {
     name: 'Sheerabert',
-    image: 'orange-monkey.png',
+    image: 'sheerabert.png',
     size: 'small',
     category: 'blue',
     superPower: 'stops panic attacks',
@@ -9,7 +9,7 @@ export const monkeys = [
 },
 {
     name: 'Luuva',
-    image: 'orange-monkey.png',
+    image: 'luva.png',
     size: 'medium',
     category: 'purple',
     superPower: 'cleans up spills and messes',
@@ -17,7 +17,7 @@ export const monkeys = [
 },
 {
     name: 'ArgyLynnda',
-    image: 'orange-monkey.png',
+    image: 'argylynda.png',
     size: 'medium',
     category: 'argyle',
     superPower: 'dances a mean disco',
@@ -25,7 +25,7 @@ export const monkeys = [
 },
 {
     name: 'Cloakedkent',
-    image: 'orange-monkey.png',
+    image: 'argylynda.png',
     size: 'small',
     category: 'invisible',
     superPower: 'hides your fears in a distant multiverse',
@@ -33,7 +33,7 @@ export const monkeys = [
 },
 {
     name: 'Tannerd',
-    image: 'orange-monkey.png',
+    image: 'tannerd.png',
     size: 'small',
     category: 'tan',
     superPower: 'Sings soothing AMSR sounds',
