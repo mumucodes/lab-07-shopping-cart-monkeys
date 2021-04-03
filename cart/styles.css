@@ -1,0 +1,13 @@
+body {
+    background-image: url("../assets/checkout.png");
+    background-repeat: no-repeat;
+    background-color: rgb(142,229,218);
+    z-index: 0;
+}
+/* main {
+    height: 2000px;
+    width: 4000px;
+    background-image: url("../assets/wallpaper.png");
+    z-index;
+
+} */
