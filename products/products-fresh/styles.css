@@ -70,6 +70,10 @@ li {
     color: white;
     text-align: center ;
     }
+button {
+    background-color:white;
+}
+}
 /* main {
     background-image: url("/assets/checkout.png") */
     }

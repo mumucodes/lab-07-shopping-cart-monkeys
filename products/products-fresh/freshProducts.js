@@ -1,15 +1,15 @@
 console.log('i am here');
 
 import { monkeys } from '../products.js';
-import { monkeyMaker} from '../../utils.js';
+import { monkeyMaker } from '../../utils.js';
 
-const ul= document.querySelector('.monkeyProfile')
+const ul = document.querySelector('.monkeyProfile');
 
-console.log(ul)
+console.log(ul);
 
-for(let item of monkeys) {
+for (let item of monkeys) {
     const newLi = monkeyMaker(item);
 
     ul.append(newLi);
 
-};
+}

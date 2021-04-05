@@ -6,6 +6,3 @@
 
 
 // // may need to use the cart fucntions here with button handlers
-
-
-// getFromLocalStorage
