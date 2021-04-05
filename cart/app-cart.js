@@ -1,8 +1,17 @@
-// //needs to connect the button frome a product choice
-// // and move that product to the cart
-// // the product needs to be stored in local storage
 
-// import { getFromLocalStorage } from "./util-cart.js";
+import { monkeys } from '../products/products.js';
+import { cart } from './cart-data.js';
+import { createRowCart, createTotalPrice, findById} from '../utils.js';
 
+const table = document.querySelector('.checkoutTable')
+console.log table
 
-// // may need to use the cart fucntions here with button handlers
+for (let cartItem of cart) {
+    const matchingMonkey = findById(monkeys, cartItem.id):
+    const tr = createRowCart(cartItem, matchingMonkey);
+
+    table.append(tr);
+}
+const totalPrice = createTotalPrice(cart, monkeys);
+
+table.append(totalPrice);

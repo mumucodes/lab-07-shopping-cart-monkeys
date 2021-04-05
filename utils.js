@@ -1,4 +1,4 @@
-import { monkeys } from "./products/products";
+import { monkeys } from './products/products.js';
 
 export function monkeyMaker(monkeys) {
     const li = document.createElement('li');
@@ -71,4 +71,5 @@ export function createTotalPrice(cartArray, monkeyArray) {
     }
     return sum;
 }
+
 

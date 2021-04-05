@@ -1,6 +1,6 @@
 console.log('i am here');
 
-import { monkeys } from '../products.js';
+import { monkeys } from;
 import { monkeyMaker } from '../../utils.js';
 
 const ul = document.querySelector('.monkeyProfile');
