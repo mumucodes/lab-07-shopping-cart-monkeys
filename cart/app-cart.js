@@ -1,13 +1,12 @@
 
 import { monkeys } from '../products/products.js';
 import { cart } from './cart-data.js';
-import { createRowCart, createTotalPrice, findById} from '../utils.js';
+import { createRowCart, createTotalPrice, findById } from '../utils.js';
 
-const table = document.querySelector('.checkoutTable')
-console.log table
+const table = document.querySelector('.checkoutTable');
 
 for (let cartItem of cart) {
-    const matchingMonkey = findById(monkeys, cartItem.id):
+    const matchingMonkey = findById(monkeys, cartItem.id);
     const tr = createRowCart(cartItem, matchingMonkey);
 
     table.append(tr);

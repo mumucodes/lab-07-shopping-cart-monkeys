@@ -49,14 +49,18 @@ export function totalPrice(price, quantity) {
     return price * quantity;
 }
 
-export function createRowCart(cartItem, monkey) {
+export function createRowCart(cartItem, monkeys) {
     const tr = document.createElement('tr');
+    
     const tdName = document.createElement('td');
-    tdName.textContent = monkey.name;
+    tdName.textContent = monkeys.name;
+    
     const tdQuantity = document.createElement('td');
     tdQuantity.textContent = cartItem.quantity;
+    
     const tdPrice = document.createElement('td');
-    tdPrice.textContent = monkey.price;
+    tdPrice.textContent = monkeys.price;
+    
     tr.append(tdName, tdPrice, tdQuantity);
 
     return tr;
