@@ -1,4 +1,6 @@
-import { monkeys } from './products/products.js';
+
+import { monkeys } from '../products/products.js';
+
 
 export function monkeyMaker(monkeys) {
     const li = document.createElement('li');
@@ -29,11 +31,10 @@ export function monkeyMaker(monkeys) {
     price.textContent = `$${monkeys.price}.00`;
 
     const button = document.createElement('button');
-    // button.classList.add();
+    button.classList.add();
     button.textContent = `add to cart`;
-    console.log(button);
 
-    li.append(pName, img, pSize, pCategory, superPower, price);
+    li.append(pName, img, pSize, pCategory, superPower, price, button);
     return li;
 }
 

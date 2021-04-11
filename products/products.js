@@ -1,5 +1,6 @@
 export const monkeys = [
     {
+        id: 1,
         name: 'Sheerabert',
         image: 'sheerabert.png',
         size: 'small',
@@ -8,6 +9,7 @@ export const monkeys = [
         price: 20,
     },
     {
+        id: 2,
         name: 'Luuva',
         image: 'luva.png',
         size: 'medium',
@@ -16,6 +18,7 @@ export const monkeys = [
         price: 15,
     },
     {
+        id: 3,
         name: 'ArgyLynnda',
         image: 'argylynda.png',
         size: 'medium',
@@ -24,6 +27,7 @@ export const monkeys = [
         price: 25,
     },
     {
+        id: 4,
         name: 'Cloakedkent',
         image: 'argylynda.png',
         size: 'small',
@@ -32,6 +36,7 @@ export const monkeys = [
         price: 120,
     },
     {
+        id: 5,
         name: 'Tannerd',
         image: 'tannerd.png',
         size: 'small',
