@@ -1,48 +1,60 @@
-main {
-    background-image: url("../assets/main-page-welcome.png");
-    background-repeat: no-repeat;
-    height: 1000px;
-    background-color: rgb(132,225,213);
-    padding: 0px;
-    margin: 0px;
-
-}
-header {
-    width: 100%;
-    height: 200px;
-    border-bottom:  8px solid rgb(250, 100, 168);
-    padding-right: 90px;
-    background-image: url("../assets/header-main.png");
-    background-repeat: no-repeat;
-    background-color: white;
-    padding: 0px;
-    margin: 0px;
-}
 body {
-    background-color: rgb(132,225,213);
-    padding: 0px;
-    margin: 0px;
+    background-image: url('/assets/products/bananas-wallpaper.png');
+    background-repeat: none;
+    background-size: cover;
+    width: 1000px;
+    height: 500px;
     }
-    .myButton {
-        background-color:transparent;
-        border-radius:42px;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-        font-family:Impact;
-        font-size:6em;
-        padding:30px 15px;
-        text-decoration:none;
-        text-shadow:3px 5px 31px #283966;
-        margin-left: 1200px;
-        margin-top: 300px;
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
     }
-    .myButton:hover {
-        background-color:transparent;
+header {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+a {
+    color: white;
     }
-    .myButton:active {
-        position:relative;
-        top:1px;
+label {
+    background-color: rgb(112 92 192);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border: solid 4px rgb(240 51 150);
+    border-radius: 35px;
+    width: 140px;
     }
-    
-
+.welcome {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    }
+.freshpeeps {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    margin-left: 5%;
+    margin-top: 5%;
+    }
+.myButton {
+    grid-column: 1 / 3;
+    grid-row: 1 ;
+    margin-top: 40%;
+    margin-left:11%;
+    background-color:transparent;
+    border-radius:42px;
+    cursor:pointer;
+    color:orangered;
+    font-family:Impact;
+    font-size:6em;
+    padding:30px 15px;
+    text-decoration:none;
+    text-shadow:3px 5px 31px #283966;
+    }
+.myButton:hover {
+    background-color:transparent;
+    }
+.myButton:active {
+    position:relative;
+    top:1px;
+    }
