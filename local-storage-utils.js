@@ -8,6 +8,7 @@ export function getCart() {
 
     if (parsedCart) {
         return parsedCart;
+    } else {
         return [];
     }
 }

@@ -1,4 +1,5 @@
 
+import { getCart } from '../local-storage-utils.js';
 import { monkeys } from '../products/products.js';
 // import { cart } from '../cart/cart-data.js';
 import { createRowCart, createTotalPrice, findById } from '../utils.js';
@@ -21,17 +22,24 @@ const cart = [
         quantity: 3
     }];
 
-
+const button = document.getElementById('submit');
 const table = document.querySelector('.checkoutTable');
 
 for (let cartItem of cart) {
-    console.log(cartItem);
 
     const matchingMonkey = findById(monkeys, cartItem.id);
     const tr = createRowCart(cartItem, matchingMonkey);
 
     table.append(tr);
 }
+
 const totalPrice = createTotalPrice(cart, monkeys);
 
 table.append(totalPrice);
+
+button.addEventListener('click', () => {
+    const cart = getCart();
+    alert(JSON.stringify(cart));
+    localStorage.clear();
+    window.location = '/';
+})

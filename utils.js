@@ -1,11 +1,8 @@
-
-import { monkeys } from '../products/products.js';
 import { addItemToCart } from './local-storage-utils.js';
 
-
-export function findById(array, id) {
-    for (let item of array) {
-        if (item.id === id) {
+export function findById(someArray, someId) {
+    for (let item of someArray) {
+        if (item.id === someId) {
             return item;
         }
     }
@@ -46,15 +43,10 @@ export function monkeyMaker(monkeys) {
     const price = document.createElement('p');
     
     price.textContent = monkeys.price.toLocalString('en-US', {
-        style: 'currency'
+        style: 'currency',
         currency: 'USD',
 
     });
-
-    // }`$${monkeys.price}.00`;
-    // price.classList.add('price');
-    
-
     const button = document.createElement('button');
     
     button.textContent = `add to cart`;
@@ -62,32 +54,33 @@ export function monkeyMaker(monkeys) {
     button.addEventListener('click', () => {
         addItemToCart(monkeys.id);
     });
-
-    // button.classList.add();
-
     
     li.append(pName, img, pSize, pCategory, superPower, price, button);
+
     return li;
 }
 
 
-// export function totalPrice(price, quantity) {
-//     return price * quantity;
-// }
-
-export function createRowCart(cartItem, monkeys) {
+export function createRowCart(someCartItem, someMonkeys) {
     const tr = document.createElement('tr');
-    
     const tdName = document.createElement('td');
-    tdName.textContent = monkeys.name;
-    
     const tdQuantity = document.createElement('td');
-    tdQuantity.textContent = cartItem.quantity;
-    
     const tdPrice = document.createElement('td');
-    tdPrice.textContent = monkeys.price;
+
+    tdName.textContent = someMonkeys.name;
+    tdQuantity.textContent = someCartItem;
+    const total = someMonkeys.price * someCartItem.quantity;
+
+    const config = { 
+        currency: 'USD',
+        style: 'currency'
+    };
+
+    const totalAsUSD = total.toLocalString('en-US', config);
+
+    tdPrice.textContent = totalAsUSD;
     
-    tr.append(tdName, tdPrice, tdQuantity);
+    tr.append(tdName, tdQuantity, tdPrice);
 
     return tr;
 }
@@ -99,7 +92,17 @@ export function createTotalPrice(cartArray, monkeyArray) {
         const lineItem = matchingMonkey.price * cartItem.quantity;
         sum = lineItem + sum;
     }
-    return sum;
+    const tr = document.createElement('tr');
+
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    const td3 = document.createElement('td');
+
+    td3.textContent = `$${sum}.00`;
+
+    tr.append(td1, td2, td3);
+
+    return tr
 }
 
 
