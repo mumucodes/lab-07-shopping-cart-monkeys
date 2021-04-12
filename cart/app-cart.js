@@ -1,29 +1,12 @@
 
 import { getCart } from '../local-storage-utils.js';
 import { monkeys } from '../products/products.js';
-// import { cart } from '../cart/cart-data.js';
+// import cart from './cart-data.js';
 import { createRowCart, createTotalPrice, findById } from '../utils.js';
 
-const cart = [
-    {
-        id: 1,
-        quantity: 3
-    },
-    {
-        id: 2,
-        quantity: 3
-    },
-    {
-        id: 3,
-        quantity: 3
-    },
-    {
-        id: 4,
-        quantity: 3
-    }];
-
-const button = document.getElementById('submit');
+const button = document.querySelector('button');
 const table = document.querySelector('.checkoutTable');
+const cart = getCart();
 
 for (let cartItem of cart) {
 
@@ -42,4 +25,4 @@ button.addEventListener('click', () => {
     alert(JSON.stringify(cart));
     localStorage.clear();
     window.location = '/';
-})
+});

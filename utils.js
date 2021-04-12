@@ -42,7 +42,7 @@ export function monkeyMaker(monkeys) {
     
     const price = document.createElement('p');
     
-    price.textContent = monkeys.price.toLocalString('en-US', {
+    price.textContent = monkeys.price.toLocaleString('en-US', {
         style: 'currency',
         currency: 'USD',
 
@@ -61,22 +61,22 @@ export function monkeyMaker(monkeys) {
 }
 
 
-export function createRowCart(someCartItem, someMonkeys) {
+export function createRowCart(someCartItem, someMonkey) {
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
     const tdQuantity = document.createElement('td');
     const tdPrice = document.createElement('td');
 
-    tdName.textContent = someMonkeys.name;
-    tdQuantity.textContent = someCartItem;
-    const total = someMonkeys.price * someCartItem.quantity;
+    tdName.textContent = someMonkey.name;
+    tdQuantity.textContent = someCartItem.quantity;
+    const total = someMonkey.price * someCartItem.quantity;
 
     const config = { 
         currency: 'USD',
         style: 'currency'
     };
 
-    const totalAsUSD = total.toLocalString('en-US', config);
+    const totalAsUSD = total.toLocaleString('en-US', config);
 
     tdPrice.textContent = totalAsUSD;
     
