@@ -1,0 +1,123 @@
+header {
+    width: 100%;
+    height: 200px;
+    padding-right: 90px;
+    background-image: url("../../assets/header-main.png");
+    background-repeat: no-repeat;
+    border-bottom: solid 30px ;
+    margin-bottom: 0;
+    }
+section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-image: url(/assets/orangemonkey.png);
+    background-position: 200px;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    
+;
+}
+img {
+    grid-area: image;
+    width: 70%;
+    border: 20px solid rgb(255 ,92, 192);
+    border-radius: 35px;
+    max-width: 25em;
+    margin-left: 30px;
+    }
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding-right: 30px;
+    margin-top:1px;
+    list-style: none;
+    display:grid;
+    grid-template-rows: 30px;
+    grid-area: 
+    "id"
+    "name"
+    "image"
+    "image"
+    "image"
+    "image"
+    "size"
+    "category"
+    "superPower"
+    "price"
+    "button";
+
+    background-image: url(/assets/products/bananas-wallpaper.png);
+    border-right: 20px solid  rgb(110 ,92, 192);
+    border-left: 20px solid rgb(110 ,92, 192);
+    }
+.name {
+    grid-area: name;
+    background-color: ivory;
+    border: solid 2px black;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    font-size: 4em;
+    text-align: center ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(26, 188, 143);
+    }
+.size {
+    grid-area: size;
+    font-size: 1em;
+    margin: 0px;
+    text-align: center ;
+    text-align: center ;
+    background-color: lavenderblush;
+    border-top: solid 3px black;}
+.category {
+    grid-area: category;
+    font-size: 2em;
+    color: orangered;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px;
+    text-align: center ;
+    background-color: lavenderblush;
+    }
+.superPower {
+    grid-area: superPower;
+    font-size: 2em;
+    margin: 0px;
+    color: black;
+    background-color: lavenderblush;
+    margin-bottom: 15px;
+    text-align:start;
+    padding-left: 10%;
+    border-bottom: solid 3px black;
+}
+.price {
+    grid-area:price;
+    background-color: rgb(185 44 217);
+    border-radius: 35px;
+    border-color: solid 10px rgb(254 83 181);
+    font-size: 3em;
+    margin: 0px;
+    font-weight: 900;
+    color: white;
+    text-align: center ;
+    }
+button {
+    grid-area: button;
+    margin-top: 20px;
+    margin-left: 100px;
+    background-color: rbg(255 220 97);
+    border-radius:42px;
+    padding: 8px;
+    cursor:pointer;
+    color:orangered;
+    font-family:Impact;
+    font-size:2em;
+    text-decoration:none;
+    text-shadow:3px 5px 31px #283966;
+    }
+.myButton:hover {
+    background-color:transparent;
+    }
+.myButton:active {
+    position:relative;
+    top:1px;
+    }

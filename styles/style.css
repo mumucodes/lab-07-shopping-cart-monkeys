@@ -1,113 +1,60 @@
-
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
-    
-    --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
-    --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
-}
-
-section {
-    background-color: var(--color5);
+    background-image: url('/assets/products/bananas-wallpaper.png');
+    background-repeat: none;
+    background-size: cover;
     width: 1000px;
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
-}
-
+    height: 500px;
+    }
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
 header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+    padding-top: 20px;
+    padding-left: 40px;
 }
-
-footer {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
-
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.gutter-right {
-    margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
-}
-
-p {
-    margin: var(--gutter);
-}
-  
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+a {
+    color: white;
     }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+label {
+    background-color: rgb(112 92 192);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border: solid 4px rgb(240 51 150);
+    border-radius: 35px;
+    width: 140px;
     }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
-
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+.welcome {
+    grid-column: 1 / 2;
+    grid-row: 1;
     }
-
-  }
+.freshpeeps {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    margin-left: 5%;
+    margin-top: 5%;
+    }
+.myButton {
+    grid-column: 1 / 3;
+    grid-row: 1 ;
+    margin-top: 40%;
+    margin-left:11%;
+    background-color:transparent;
+    border-radius:42px;
+    cursor:pointer;
+    color:orangered;
+    font-family:Impact;
+    font-size:6em;
+    padding:30px 15px;
+    text-decoration:none;
+    text-shadow:3px 5px 31px #283966;
+    }
+.myButton:hover {
+    background-color:transparent;
+    }
+.myButton:active {
+    position:relative;
+    top:1px;
+    }
